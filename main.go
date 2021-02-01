@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	dbConnection, err := sql.Open("mysql", "docker:docker@tcp(127.0.0.1:3307)/many_data")
+	dbConnection, err := sql.Open("mysql", "docker:docker@tcp(127.0.0.1:3306)/many_data")
 	if err != nil {
 		log.Fatal(err)
 	}
